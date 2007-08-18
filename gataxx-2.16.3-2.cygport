@@ -1,0 +1,22 @@
+ORIG_PN="gnome-games"
+inherit gnome2
+
+DESCRIPTION="GNOME Ataxx game"
+
+CYGCONF_ARGS="
+	--enable-omitgames=all
+	--enable-games=gataxx
+	--disable-setgid
+	--with-scores-group=`id -gn`
+	--with-scores-user=`id -un`
+"
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	rm -fr \
+		${D}/etc/gconf/schemas/libgnomegames.schemas \
+		${D}/usr/bin/games-server.py \
+		${D}/usr/share/pixmaps/gnome-games-common/
+}
