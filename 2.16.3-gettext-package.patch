@@ -1,0 +1,11 @@
+--- origsrc/gnome-games-2.16.3/configure.in	2007-01-28 10:12:51.000000000 -0600
++++ src/gnome-games-2.16.3/configure.in	2007-08-17 14:23:04.937500000 -0500
+@@ -202,7 +202,7 @@
+ AC_SUBST(ESD_CFLAGS)
+ AC_SUBST(ESD_LIBS)
+ 
+-GETTEXT_PACKAGE=gnome-games
++GETTEXT_PACKAGE=gataxx
+ AC_SUBST(GETTEXT_PACKAGE)
+ AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE", [The gettext package name])
+ AM_GLIB_GNU_GETTEXT
