@@ -1,5 +1,5 @@
 category: Games Gnome
-requires: cygwin GConf2 libcairo2 libgcc1 libgconf2_4 libglib2.0_0 libgnome2_0 libgnomeui2_0 libgtk2.0_0 libintl8 libpango1.0_0
+requires: GConf2 libcairo2 libgcc1 libgconf2_4 libglib2.0_0 libgnome2_0 libgnomeui2_0 libgtk2.0_0 libintl8 libpango1.0_0
 sdesc: "GNOME Ataxx game"
 ldesc: "Gnome-games is a collection of simple, but addictive, games from
 the GNOME desktop project. They represent many of the popular games and
