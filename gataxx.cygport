@@ -1,11 +1,19 @@
 ORIG_PN="gnome-games"
 inherit gnome2
 
-DESCRIPTION="GNOME Ataxx game"
+NAME="gataxx"
+VERSION=2.16.3
+RELEASE=10
+CATEGORY="Games"
+SUMMARY="GNOME Ataxx game"
+DESCRIPTION="Ataxx is a two-player disc-flipping game like Iagno. Ataxx,
+however, begins at the corners, rather than at the center of the board, and
+has slightly different rules for adding and moving discs."
 
 PATCH_URI="2.16.3-gettext-package.patch"
 
 CYGCONF_ARGS="
+	--enable-compile-warnings=minimum
 	--enable-omitgames=all
 	--enable-games=gataxx
 	--disable-setgid
